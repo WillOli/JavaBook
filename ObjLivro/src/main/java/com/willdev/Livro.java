@@ -3,7 +3,7 @@ package com.willdev;
 public class Livro {
     String name;
     String descricao;
-    double valor;
+    private double valor;
     String isbn; //International Standard Book Number.
     Autor autor;
 
@@ -24,10 +24,20 @@ public class Livro {
     }
 
     /*Método que aplica desconto nos livros.*/
-    public void aplicaDescontoDe(double porcentagem) {
+    public boolean aplicaDescontoDe(double porcentagem) {
+        if (porcentagem > 0.3) {
+            return false;
+        }
         this.valor -= this.valor * porcentagem;
+        return true;
     }
     boolean temAutor() {
         return this.autor != null;
+    }
+    void adicionarValor(double valor) {
+        this.valor = valor;
+    }
+    double retornaValor() {
+        return this.valor;
     }
 }
