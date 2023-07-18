@@ -7,6 +7,7 @@ public class Livro {
     String isbn; //International Standard Book Number.
     Autor autor;
 
+    /*Método que apenas imprime os valores da classe*/
     void mostraDetalhes() {
         String mensagem = "Mostrando detalhes do livro";
         System.out.println(mensagem);
@@ -14,7 +15,8 @@ public class Livro {
         System.out.println("Descrição: " + descricao);
         System.out.println("Valor: " + valor);
         System.out.println("ISBN: " + isbn);
+        autor.mostraDetalhes();
         System.out.println("--");
-    }
 
+    }
 }

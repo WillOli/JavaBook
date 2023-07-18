@@ -5,7 +5,7 @@ public class Main {
 
         Autor autor = new Autor();
         autor.nome = "Rodrigo Turini";
-        autor.nome = "rodrigo.turini@caelum.com.br";
+        autor.email = "rodrigo.turini@caelum.com.br";
         autor.cpf = "123.456.789.10";
 
         Livro livro = new Livro();
@@ -13,26 +13,26 @@ public class Main {
         livro.descricao = "Novos recursos da linguagem";
         livro.valor = 59.90;
         livro.isbn = "978-85-66250-46-6";
+        /*Associando o livro ao autor*/
+        livro.autor = autor;
 
         livro.mostraDetalhes();
 
-        livro.autor = autor;
-
         Autor outroAutor = new Autor();
-        autor.nome = "Paulo Silveira";
-        autor.email = "paulo.silveira@caelum.com.br";
-        autor.cpf = "123.456.789.10";
+        outroAutor.nome = "Paulo Silveira";
+        outroAutor.email = "paulo.silveira@caelum.com.br";
+        outroAutor.cpf = "123.456.789.10";
+
 
         Livro outroLivro = new Livro();
         outroLivro.name = "Lógica de programação";
         outroLivro.descricao = "Crie seus primeiros programas";
         outroLivro.valor = 59.90;
         outroLivro.isbn = "978-85-66250-22-0";
-
+        /*Associando o livro ao autor*/
         outroLivro.autor = outroAutor;
 
-        livro.mostraDetalhes();
-
+        outroAutor.mostraDetalhes();
 
     }
 }
