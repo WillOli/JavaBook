@@ -1,4 +1,4 @@
-# Desbravendo Java e Orientação a Objetos
+# Desbravando Java e Orientação a Objetos
 
 Um guia para iniciantes da linguagem
 Bem-vindo(a) ao readme do livro "Desbravendo Java e Orientação a Objetos"! Este guia foi desenvolvido para auxiliar iniciantes na linguagem Java e introduzir os conceitos fundamentais de programação orientada a objetos.
