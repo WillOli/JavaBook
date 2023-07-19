@@ -1,11 +1,49 @@
 package com.willdev;
 
 public class Livro {
-    String name;
-    String descricao;
+    private String name;
+    private String descricao;
     private double valor;
-    String isbn; //International Standard Book Number.
-    Autor autor;
+    private String isbn; //International Standard Book Number.
+    private Autor autor;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
+
 
     /*Método que apenas imprime os valores da classe*/
     void mostraDetalhes() {
