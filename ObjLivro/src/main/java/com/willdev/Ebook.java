@@ -1,6 +1,6 @@
 package com.willdev;
 
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional{
 
     private String nome;
     private String descricao;
