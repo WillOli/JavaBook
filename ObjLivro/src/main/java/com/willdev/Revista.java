@@ -5,6 +5,7 @@ public class Revista {
     private String nome;
     private String descricao;
     private double valor;
+    private Editora editora;
 
     public String getNome() {
         return nome;
@@ -24,6 +25,23 @@ public class Revista {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public Editora getEditora() {
+        return editora;
+    }
+    public void setEditora(Editora editora) {
+        this.editora = editora;
+    }
+
+    /*Regra de negócio para desconto de revista*/
+    public boolean aplicaDescontoDe(double porcentagem) {
+        if (porcentagem > 0.1) {
+            return false;
+        }
+        double desconto = getValor() * porcentagem;
+        setValor(getValor() - desconto);
+        return true;
     }
 
 }
