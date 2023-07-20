@@ -13,9 +13,7 @@ public abstract class Livro {
         this.isbn = "000-00-00000-00-0";
     }
 
-    public boolean aplicaDescondeDe(double procentagem) {
-        return false;
-    }
+    public abstract boolean aplicaDescondeDe(double procentagem);
 
     /*Construtor sem argumento*/
     public Livro(){

@@ -12,6 +12,11 @@ public class Ebook extends Livro {
         super(autor);
     }
 
+    @Override
+    public boolean aplicaDescondeDe(double procentagem) {
+        return false;
+    }
+
     /*Ao anotar nosso método com @Override, o código não compilará
     * caso esse método não exista na classe pai(superclasse)*/
     @Override

@@ -4,6 +4,12 @@ public class LivroFisico  extends Livro{
     public LivroFisico(Autor autor) {
         super(autor);
     }
+
+    @Override
+    public boolean aplicaDescondeDe(double procentagem) {
+        return false;
+    }
+
     public double getTexaImpressao() {
         return this.getValor() * 0.05;
     }
