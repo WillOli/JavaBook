@@ -1,6 +1,6 @@
 package com.willdev;
 
-public class Livro {
+public abstract class Livro {
     private String name;
     private String descricao;
     private double valor;
