@@ -7,12 +7,17 @@ public class RegistroDeVendas {
 
         LivroFisico fisico = new LivroFisico(autor);
         fisico.setName("Test-Driven Develoment");
+        fisico.setValor(59.90);
 
         Ebook ebook = new Ebook(autor);
         ebook.setName("Test-Driven Development");
+        ebook.setValor(29.90);
 
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
+
+        System.out.println("Total " + carrinho.getTotal());
     }
 }
