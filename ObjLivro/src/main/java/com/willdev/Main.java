@@ -1,5 +1,7 @@
 package com.willdev;
 
+import java.io.EOFException;
+
 public class Main {
     public static void main(String[] args) {
 
