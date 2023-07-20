@@ -18,6 +18,10 @@ public class RegistroDeVendas {
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
 
+        if (fisico.aplicaDescontoDe10Porcento()) {
+            System.out.println("Valor agora é: " + fisico.getValor());
+        }
+
         System.out.println("Total " + carrinho.getTotal());
     }
 }
