@@ -1,6 +1,6 @@
 package com.willdev;
 
-public class Revista {
+public class Revista implements Produto {
 
     private String nome;
     private String descricao;
