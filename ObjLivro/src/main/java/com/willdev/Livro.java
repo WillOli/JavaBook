@@ -6,13 +6,15 @@ public abstract class Livro {
     private double valor;
     private String isbn; //International Standard Book Number.
     private Autor autor;
-    private boolean impresso;
 
     /*Construtor com argumento*/
     public Livro(Autor autor) {
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
-        this.impresso = true;
+    }
+
+    public boolean aplicaDescondeDe(double procentagem) {
+        return false;
     }
 
     /*Construtor sem argumento*/
