@@ -6,6 +6,20 @@ public class Livro {
     private double valor;
     private String isbn; //International Standard Book Number.
     private Autor autor;
+    private boolean impresso;
+
+    /*Construtor com argumento*/
+    public Livro(Autor autor) {
+        this.autor = autor;
+        this.isbn = "000-00-00000-00-0";
+        this.impresso = true;
+    }
+
+    /*Construtor sem argumento*/
+    public Livro(){
+
+    }
+
 
     public String getName() {
         return name;
@@ -64,6 +78,8 @@ public class Livro {
     /*Método que aplica desconto nos livros.*/
     public boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.3) {
+            return false;
+        } else if (!this.impresso && porcentagem > 0.15) {
             return false;
         }
         this.valor -= this.valor * porcentagem;
