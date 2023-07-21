@@ -1,7 +1,7 @@
 package com.willdev.livraria.teste;
 
-import com.willdev.Livro;
-import com.willdev.LivroFisico;
+import com.willdev.livraria.produtos.Livro;
+import com.willdev.livraria.produtos.LivroFisico;
 import com.willdev.livraria.Autor;
 
 import java.util.Date;

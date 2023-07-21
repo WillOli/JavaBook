@@ -1,7 +1,7 @@
 package com.willdev.livraria.teste;
 
-import com.willdev.Livro;
-import com.willdev.MiniLivro;
+import com.willdev.livraria.produtos.Livro;
+import com.willdev.livraria.produtos.MiniLivro;
 import com.willdev.livraria.Autor;
 import com.willdev.livraria.produtos.Ebook;
 

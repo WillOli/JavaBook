@@ -1,4 +1,4 @@
-package com.willdev;
+package com.willdev.livraria.produtos;
 
 import com.willdev.livraria.Autor;
 

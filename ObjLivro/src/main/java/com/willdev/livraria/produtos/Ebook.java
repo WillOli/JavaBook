@@ -1,8 +1,6 @@
 package com.willdev.livraria.produtos;
 
-import com.willdev.Livro;
 import com.willdev.livraria.Autor;
-import com.willdev.livraria.produtos.Promocional;
 
 public class Ebook extends Livro implements Promocional {
 

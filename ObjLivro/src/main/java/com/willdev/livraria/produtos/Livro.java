@@ -1,4 +1,4 @@
-package com.willdev;
+package com.willdev.livraria.produtos;
 
 import com.willdev.livraria.Autor;
 import com.willdev.livraria.produtos.Produto;
@@ -63,7 +63,7 @@ public abstract class Livro implements Produto {
 
 
     /*Método que apenas imprime os valores da classe*/
-    void mostraDetalhes() {
+    public void mostraDetalhes() {
         String mensagem = "Mostrando detalhes do livro";
         System.out.println(mensagem);
         System.out.println("Nome: " + name);
@@ -90,10 +90,10 @@ public abstract class Livro implements Produto {
     boolean temAutor() {
         return this.autor != null;
     }
-    void adicionarValor(double valor) {
+    public void adicionarValor(double valor) {
         this.valor = valor;
     }
-    double retornaValor() {
+    public double retornaValor() {
         return this.valor;
     }
 }

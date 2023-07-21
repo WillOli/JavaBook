@@ -1,7 +1,7 @@
 package com.willdev.livraria.teste;
 
 import com.willdev.CarrinhoDeCompras;
-import com.willdev.LivroFisico;
+import com.willdev.livraria.produtos.LivroFisico;
 import com.willdev.livraria.Autor;
 import com.willdev.livraria.produtos.Ebook;
 
