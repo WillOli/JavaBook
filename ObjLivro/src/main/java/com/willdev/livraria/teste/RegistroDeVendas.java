@@ -4,6 +4,7 @@ import com.willdev.CarrinhoDeCompras;
 import com.willdev.livraria.produtos.LivroFisico;
 import com.willdev.livraria.Autor;
 import com.willdev.livraria.produtos.Ebook;
+import com.willdev.livraria.produtos.Produto;
 
 public class RegistroDeVendas {
     public static void main(String[] args) {
@@ -27,6 +28,14 @@ public class RegistroDeVendas {
             System.out.println("Valor agora é: " + fisico.getValor());
         }
 
+        Produto[] produtos = carrinho.getProdutos();
+
+        for (int i = 0; i < produtos.length; i++) {
+            Produto produto = produtos[i];
+            if (produto != null) {
+                System.out.println(produto.getValor());
+            }
+        }
         System.out.println("Total " + carrinho.getTotal());
     }
 }
