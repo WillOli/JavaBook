@@ -1,4 +1,9 @@
-package com.willdev;
+package com.willdev.livraria.teste;
+
+import com.willdev.CarrinhoDeCompras;
+import com.willdev.LivroFisico;
+import com.willdev.livraria.Autor;
+import com.willdev.livraria.produtos.Ebook;
 
 public class RegistroDeVendas {
     public static void main(String[] args) {

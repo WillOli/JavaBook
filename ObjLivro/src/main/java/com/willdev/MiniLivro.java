@@ -1,5 +1,7 @@
 package com.willdev;
 
+import com.willdev.livraria.Autor;
+
 public class MiniLivro extends Livro {
     public MiniLivro(Autor autor) {
         super(autor);

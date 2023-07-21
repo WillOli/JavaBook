@@ -1,6 +1,7 @@
 package com.willdev;
 
-import javax.swing.plaf.ProgressBarUI;
+import com.willdev.livraria.produtos.Produto;
+import com.willdev.livraria.produtos.Revista;
 
 public class CarrinhoDeCompras {
 

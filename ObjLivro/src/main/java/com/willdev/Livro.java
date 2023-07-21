@@ -1,5 +1,8 @@
 package com.willdev;
 
+import com.willdev.livraria.Autor;
+import com.willdev.livraria.produtos.Produto;
+
 public abstract class Livro implements Produto {
     private String name;
     private String descricao;

@@ -1,4 +1,8 @@
-package com.willdev;
+package com.willdev.livraria.produtos;
+
+import com.willdev.livraria.Editora;
+import com.willdev.livraria.produtos.Produto;
+import com.willdev.livraria.produtos.Promocional;
 
 public class Revista implements Produto, Promocional {
 

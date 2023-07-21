@@ -1,6 +1,10 @@
-package com.willdev;
+package com.willdev.livraria.produtos;
 
-public class Ebook extends Livro implements Promocional{
+import com.willdev.Livro;
+import com.willdev.livraria.Autor;
+import com.willdev.livraria.produtos.Promocional;
+
+public class Ebook extends Livro implements Promocional {
 
     private String nome;
     private String descricao;

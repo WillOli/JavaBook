@@ -1,6 +1,9 @@
 package com.willdev;
 
-public class LivroFisico  extends Livro implements Promocional{
+import com.willdev.livraria.Autor;
+import com.willdev.livraria.produtos.Promocional;
+
+public class LivroFisico  extends Livro implements Promocional {
     public LivroFisico(Autor autor) {
         super(autor);
     }

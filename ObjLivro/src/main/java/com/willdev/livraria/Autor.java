@@ -1,4 +1,4 @@
-package com.willdev;
+package com.willdev.livraria;
 
 public class Autor {
     private String nome;

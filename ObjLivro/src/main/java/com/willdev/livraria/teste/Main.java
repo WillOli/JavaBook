@@ -1,7 +1,10 @@
-package com.willdev;
+package com.willdev.livraria.teste;
 
-import java.io.EOFException;
+import com.willdev.Livro;
+import com.willdev.LivroFisico;
+import com.willdev.livraria.Autor;
 
+import java.util.Date;
 public class Main {
     public static void main(String[] args) {
 
@@ -45,6 +48,8 @@ public class Main {
         } else {
             System.out.print("Valor com desconto: " + livro.retornaValor());
         }
+
+        Date date = new Date();
 
     }
 }

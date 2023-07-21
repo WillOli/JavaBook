@@ -1,5 +1,5 @@
-package com.willdev;
-
+package com.willdev.livraria.produtos;
+@FunctionalInterface
 public interface Promocional {
     boolean aplicaDescontoDe(double procentagem);
 
