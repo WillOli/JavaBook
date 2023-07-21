@@ -6,8 +6,10 @@ import com.willdev.livraria.Autor;
 import com.willdev.livraria.produtos.Ebook;
 import com.willdev.livraria.produtos.Produto;
 
+import java.io.FileNotFoundException;
+
 public class RegistroDeVendas {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Autor autor = new Autor();
         autor.setNome("Maurício Aniche");
 
@@ -44,5 +46,6 @@ public class RegistroDeVendas {
         }
         System.out.println("Fui executado");
         System.out.println("Total " + carrinho.getTotal());
+
     }
 }
