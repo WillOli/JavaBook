@@ -30,6 +30,11 @@ public class Ebook extends Livro implements Promocional {
         return super.aplicaDescontoDe(porcentagem);
     }
 
+    @Override
+    public String toString() {
+        return "Eu sout um Ebook";
+    }
+
     public String getWaterMark() {
         return waterMark;
     }

@@ -46,6 +46,7 @@ public class RegistroDeVendas {
         }
         System.out.println("Fui executado");
         System.out.println("Total " + carrinho.getTotal());
+        System.out.println(ebook);
 
     }
 }

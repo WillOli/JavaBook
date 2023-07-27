@@ -1,7 +1,6 @@
 package com.willdev.livraria.produtos;
 
 import com.willdev.livraria.Autor;
-import com.willdev.livraria.produtos.Produto;
 
 public abstract class Livro implements Produto {
     private String name;
@@ -63,11 +62,24 @@ public abstract class Livro implements Produto {
     public void setAutor(Autor autor) {
         this.autor = autor;
     }
+    @Override
+    public String toString() {
+        System.out.println("Nome: " + name);
+        System.out.println("Descrição: " + descricao);
+        System.out.println("Valor: " + valor);
+        System.out.println("ISBN: " + isbn);
+
+        if (this.temAutor()) {
+            autor.toString();
+        }
+        System.out.println("--");
+        return null;
+    }
 
 
 
     /*Método que apenas imprime os valores da classe*/
-    public void mostraDetalhes() {
+    public String mostraDetalhes() {
         String mensagem = "Mostrando detalhes do livro";
         System.out.println(mensagem);
         System.out.println("Nome: " + name);
@@ -80,6 +92,7 @@ public abstract class Livro implements Produto {
             autor.mostraDetalhes();
         }
         System.out.println("--");
+        return mensagem;
     }
 
     /*Método que aplica desconto nos livros.*/

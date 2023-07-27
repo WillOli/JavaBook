@@ -35,4 +35,10 @@ public class Autor {
         System.out.println("Email: " + email);
         System.out.println("CPF: " + cpf);
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Autor outro = (Autor) obj;
+        return this.nome.equals(outro.nome);
+    }
 }
